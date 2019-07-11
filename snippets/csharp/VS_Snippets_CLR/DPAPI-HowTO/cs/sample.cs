@@ -94,7 +94,7 @@ public class MemoryProtectionSample
             throw new ArgumentException("Buffer");
         
 
-        // Encrypt the data in memory. The result is stored in the same same array as the original data.
+        // Encrypt the data and store the result in a new byte array. The original data remains unchanged.
         ProtectedMemory.Protect(Buffer, Scope);
 
     }
